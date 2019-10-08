@@ -1,0 +1,22 @@
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         verbose="true"
+         stopOnFailure="false"
+         testdox="true"
+         code-coverage="true">
+    <testsuites>
+        <testsuite name="FeatureTests">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">app/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="code-coverage-report" lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+        <log type="testdox-html" target="/tmp/testdox.html"/>
+    </logging>
+</phpunit>
