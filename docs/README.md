@@ -21,4 +21,4 @@ todo
 
 ## Contribution
 
-Author: [Karthik Bhat K](mailto:karthikb@unicourt.com)
+Author: [Karthik Bhat K](https://linkedin.com/in/theBuzzyCoder)
