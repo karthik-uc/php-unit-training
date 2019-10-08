@@ -8,7 +8,7 @@ class FirstTest extends TestCase
 
     public function setUp(): void
     {
-        $firstMock = $this->getMockBuilder("First");
+        $firstMock = $this->getMockBuilder(First::class);
     }
 }
 ```
