@@ -19,9 +19,9 @@ class First
         
         $test = $second->helloWorld();
         if ($test == 'Hello World') {
-            print "hello World";
+            print "hello World" . PHP_EOL;
         } else {
-            print "bye";
+            print "bye" . PHP_EOL;
         }
     }
 }
