@@ -3,6 +3,9 @@ namespace App;
 
 class First
 {
+    public function __construct()
+    {
+    }
 
     public function isTrue()
     {
@@ -16,12 +19,11 @@ class First
 
     public function sayHello(Second $second)
     {
-        
-        $test = $second->helloWorld();
+        $test = $second->helloName('World');
         if ($test == 'Hello World') {
-            print "hello World" . PHP_EOL;
+            print 'hello World' . PHP_EOL;
         } else {
-            print "bye" . PHP_EOL;
+            print 'bye' . PHP_EOL;
         }
     }
 }

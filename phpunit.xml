@@ -2,8 +2,7 @@
          colors="true"
          verbose="true"
          stopOnFailure="false"
-         testdox="true"
-         code-coverage="true">
+         testdox="true">
     <testsuites>
         <testsuite name="FeatureTests">
             <directory suffix="Test.php">./tests</directory>
